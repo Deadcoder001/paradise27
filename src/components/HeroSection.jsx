@@ -181,18 +181,18 @@ export default function HeroSection({ onOpenReserve: _onOpenReserve, onOpenMenu 
       ref={sectionRef}
       id="home"
       aria-label="Paradise 27 Fine Dining"
-      className="relative z-30 min-h-screen bg-[#BF2A2E] text-white flex flex-col justify-between pt-20 xs:pt-24 sm:pt-36 lg:pt-40 pb-0 overflow-x-clip overflow-y-visible"
+      className="relative z-30 min-h-0 sm:min-h-screen bg-[#BF2A2E] text-white flex flex-col justify-start sm:justify-between pt-16 xs:pt-20 sm:pt-36 lg:pt-40 pb-6 sm:pb-0 overflow-x-clip overflow-y-visible"
     >
 
       <div
         ref={textContentRef}
-        className="relative max-w-5xl mx-auto px-3.5 xs:px-5 sm:px-6 lg:px-8 w-full z-10 text-center will-change-transform pt-4 xs:pt-8 sm:pt-0 mt-2 xs:mt-4 sm:mt-4"
+        className="relative max-w-5xl mx-auto px-3.5 xs:px-5 sm:px-6 lg:px-8 w-full z-10 text-center will-change-transform pt-1 xs:pt-2 sm:pt-0 mt-1 xs:mt-2 sm:mt-4"
       >
         <motion.div
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="flex flex-col items-center space-y-3 xs:space-y-4 sm:space-y-5"
+          className="flex flex-col items-center space-y-2.5 xs:space-y-3 sm:space-y-5"
         >
 
           <div className="flex flex-col items-center w-full">
@@ -285,8 +285,8 @@ export default function HeroSection({ onOpenReserve: _onOpenReserve, onOpenMenu 
       </div>
 
       {/* Mobile View (< 640px): Interactive Vertical Compare Bar Platter (Zero Scroll Lag) */}
-      <div className="sm:hidden relative w-full flex flex-col items-center justify-end mt-4 xs:mt-6 z-40 select-none pb-2">
-        <div className="relative flex justify-center items-end overflow-visible w-full max-w-[340px] xs:max-w-[380px] mx-auto px-4">
+      <div className="sm:hidden relative w-full flex flex-col items-center justify-center mt-3 xs:mt-5 sm:mt-0 z-40 select-none pb-3 pt-0">
+        <div className="relative flex justify-center items-end overflow-visible w-full max-w-[320px] xs:max-w-[360px] mx-auto px-4">
           
           {/* Left Side Dish: Spicy Fish Curry (Appears as it is) */}
           <div className="absolute -left-2 xs:-left-3 bottom-[16%] xs:bottom-[18%] z-30 pointer-events-none w-[95px] xs:w-[115px] aspect-square">
