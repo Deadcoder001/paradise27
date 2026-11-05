@@ -1,0 +1,147 @@
+/* Custom animations and effects for Paradise 27 */
+
+@keyframes pulseSlow {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.05);
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulseSlow 8s ease-in-out infinite;
+}
+
+@keyframes floatSoft {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float {
+  animation: floatSoft 5s ease-in-out infinite;
+}
+
+/* Ensure GSAP ScrollTrigger pin-spacer stays in the top layer, never clips overflow, and matches crimson background */
+.pin-spacer {
+  z-index: 30 !important;
+  overflow: visible !important;
+  background: #BF2A2E !important;
+}
+
+.pin-spacer > section {
+  overflow: visible !important;
+}
+
+/* Hide scrollbar for carousel */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* SociableKIT Customization: Dark BG, No Boxes, Remove Prev/Next buttons, Hide Watermark */
+.sk-ww-google-reviews {
+  background: transparent !important;
+}
+
+/* Remove boxes, borders, and shadows from review cards */
+.sk-ww-google-reviews .sk-review-item,
+.sk-ww-google-reviews .sk_reviews_slider_item,
+.sk-ww-google-reviews .sk_review_item,
+.sk-ww-google-reviews [class*="review-item"],
+.sk-ww-google-reviews [class*="review_item"],
+.sk-ww-google-reviews [class*="sk-card"],
+.sk-ww-google-reviews [class*="card"] {
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+/* Remove any separator lines, hr, or borders from SociableKIT */
+.sk-ww-google-reviews hr,
+.sk-ww-google-reviews [class*="divider"],
+.sk-ww-google-reviews [class*="separator"],
+.sk-ww-google-reviews [class*="line"] {
+  display: none !important;
+  border: none !important;
+  height: 0 !important;
+  opacity: 0 !important;
+}
+
+/* Ensure review texts are crisp and readable on dark background */
+.sk-ww-google-reviews,
+.sk-ww-google-reviews [class*="review-item"],
+.sk-ww-google-reviews [class*="review_item"],
+.sk-ww-google-reviews [class*="author"],
+.sk-ww-google-reviews [class*="reviewer"],
+.sk-ww-google-reviews [class*="name"],
+.sk-ww-google-reviews [class*="text"],
+.sk-ww-google-reviews [class*="content"] {
+  color: #ffffff;
+}
+
+.sk-ww-google-reviews [class*="date"],
+.sk-ww-google-reviews [class*="time"],
+.sk-ww-google-reviews time {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Remove Next and Previous Buttons */
+.sk-ww-google-reviews .slick-prev,
+.sk-ww-google-reviews .slick-next,
+.sk-ww-google-reviews .swiper-button-prev,
+.sk-ww-google-reviews .swiper-button-next,
+.sk-ww-google-reviews .sk_reviews_slider_arrow,
+.sk-ww-google-reviews .sk-slider-arrow,
+.sk-ww-google-reviews button[class*="prev"],
+.sk-ww-google-reviews button[class*="next"],
+.sk-ww-google-reviews [class*="arrow-prev"],
+.sk-ww-google-reviews [class*="arrow-next"],
+.sk-ww-google-reviews [aria-label*="Next"],
+.sk-ww-google-reviews [aria-label*="Previous"],
+.sk-ww-google-reviews .sk-arrow {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  opacity: 0 !important;
+}
+
+/* Hide SociableKIT watermark, tutorial links, and branding */
+.sk-ww-google-reviews a[href*="sociablekit.com"],
+.sk-ww-google-reviews a[href*="tutorials/embed-google-reviews-website"],
+.sk-ww-google-reviews .sk-powered-by,
+.sk-ww-google-reviews .sk-branding,
+.sk-ww-google-reviews .sk-attribution,
+.sk-ww-google-reviews .sk-badge,
+.sk-ww-google-reviews .sk-widget-branding,
+.sk-ww-google-reviews .sk_powered_by,
+.sk-ww-google-reviews .sk_branding,
+.sk-ww-google-reviews [class*="branding"],
+.sk-ww-google-reviews [class*="powered-by"],
+.sk-ww-google-reviews [class*="powered_by"],
+.sk-ww-google-reviews [class*="attribution"],
+.sk-ww-google-reviews [class*="creator-link"],
+.sk-ww-google-reviews .sk-creator-link,
+a[href*="sociablekit.com"],
+a[href*="sociablekit"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  max-height: 0 !important;
+  overflow: hidden !important;
+  pointer-events: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+}

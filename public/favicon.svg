@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Radial Gradient: Royal Crimson Depth -->
+    <radialGradient id="crimsonGlow" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#D9383C" />
+      <stop offset="55%" stop-color="#BF2A2E" />
+      <stop offset="100%" stop-color="#6E0E12" />
+    </radialGradient>
+
+    <!-- Warm Golden Hearth Gradient for Accents -->
+    <linearGradient id="goldHearth" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082" />
+      <stop offset="50%" stop-color="#FFB957" />
+      <stop offset="100%" stop-color="#FB6218" />
+    </linearGradient>
+
+    <!-- Flame Accent Gradient -->
+    <linearGradient id="flameGrad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#FFF275" />
+      <stop offset="45%" stop-color="#FF9F1C" />
+      <stop offset="100%" stop-color="#E71D36" />
+    </linearGradient>
+
+    <!-- Subtle Drop Shadow for 3D Badge Depth -->
+    <filter id="shadowDepth" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <!-- Base Squircle / Rounded Shield Container -->
+  <rect x="24" y="24" width="464" height="464" rx="112" fill="url(#crimsonGlow)" filter="url(#shadowDepth)" />
+
+  <!-- Outer Fine Gold Inset Border -->
+  <rect x="42" y="42" width="428" height="428" rx="96" fill="none" stroke="url(#goldHearth)" stroke-width="5" stroke-opacity="0.75" />
+
+  <!-- Inner Delicate Concentric Ring -->
+  <circle cx="256" cy="256" r="192" fill="none" stroke="url(#goldHearth)" stroke-width="2.5" stroke-dasharray="8 6" stroke-opacity="0.5" />
+
+  <!-- Stylized Culinary Hearth Flame / Crown at Top -->
+  <g transform="translate(256, 150) scale(1.15)">
+    <!-- Central Main Flame -->
+    <path d="M0,-52 C14,-32 24,-14 24,6 C24,20 12,32 0,32 C-12,32 -24,20 -24,6 C-24,-14 -14,-32 0,-52 Z" fill="url(#flameGrad)" />
+    <!-- Left Ember Tongue -->
+    <path d="M-10,-24 C-4,-14 -6,-2 -14,6 C-20,12 -28,8 -26,-2 C-25,-12 -18,-18 -10,-24 Z" fill="url(#goldHearth)" opacity="0.85" />
+    <!-- Right Ember Tongue -->
+    <path d="M10,-24 C4,-14 6,-2 14,6 C20,12 28,8 26,-2 C25,-12 18,-18 10,-24 Z" fill="url(#goldHearth)" opacity="0.85" />
+  </g>
+
+  <!-- Iconic Bold Numeral "27" (Custom Serif Geometric Lettering) -->
+  <g fill="#FFFFFF" text-anchor="middle" font-family="'Cormorant Garamond', 'Playfair Display', Georgia, serif" font-weight="900" font-size="208" letter-spacing="-4">
+    <text x="256" y="345" filter="drop-shadow(0px 6px 12px rgba(0,0,0,0.5))">27</text>
+  </g>
+
+  <!-- Bottom Brand Ribbon Banner Text "PARADISE" -->
+  <g fill="url(#goldHearth)" text-anchor="middle" font-family="'Inter', -apple-system, sans-serif" font-weight="800" font-size="28" letter-spacing="10">
+    <text x="261" y="408">PARADISE</text>
+  </g>
+</svg>

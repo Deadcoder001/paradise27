@@ -1,0 +1,36 @@
+# Robots.txt for Paradise 27 (https://paradise27.com)
+# Nagaon Bypass, National Highway 27, Assam, India
+
+User-agent: *
+Allow: /
+
+# Search Engine & Generative AI Crawlers (SEO & GEO)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+Sitemap: https://paradise27.com/sitemap.xml
+
