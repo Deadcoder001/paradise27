@@ -240,20 +240,20 @@ void main() {
 `;
 
 const Digits = ({ value }) => (
-  <span className="flex-carousel__digits">
+  <div className="flex-carousel__digits">
     {String(value)
       .padStart(2, '0')
       .split('')
       .map((digit, index) => (
-        <span key={index} className="flex-carousel__digit">
-          <span className="flex-carousel__reel" style={{ transform: `translateY(${-Number(digit) * 10}%)` }}>
+        <div key={index} className="flex-carousel__digit">
+          <div className="flex-carousel__reel" style={{ transform: `translateY(${-Number(digit) * 10}%)` }}>
             {'0123456789'.split('').map(n => (
-              <span key={n}>{n}</span>
+              <div key={n}>{n}</div>
             ))}
-          </span>
-        </span>
+          </div>
+        </div>
       ))}
-  </span>
+  </div>
 );
 
 const FlexCarousel = ({
@@ -1192,7 +1192,15 @@ const FlexCarousel = ({
     container.addEventListener('blur', onBlur);
     document.addEventListener('visibilitychange', onVisibility);
 
-    const resizeObserver = new ResizeObserver(resize);
+    let resizeRaf = 0;
+    const safeResize = () => {
+      if (resizeRaf) cancelAnimationFrame(resizeRaf);
+      resizeRaf = requestAnimationFrame(() => {
+        resize();
+      });
+    };
+
+    const resizeObserver = new ResizeObserver(safeResize);
     resizeObserver.observe(container);
     const intersectionObserver = new IntersectionObserver(([entry]) => {
       visible = entry.isIntersecting;
@@ -1215,6 +1223,7 @@ const FlexCarousel = ({
       alive = false;
       visible = false;
       engineRef.current = null;
+      if (resizeRaf) cancelAnimationFrame(resizeRaf);
       cancelAnimationFrame(raf);
       resizeObserver.disconnect();
       intersectionObserver.disconnect();
@@ -1250,15 +1259,15 @@ const FlexCarousel = ({
     >
       {captions && current && revealed && (
         <div className="flex-carousel__caption" aria-hidden="true">
-          <span key={active} className="flex-carousel__title">
-            {current.title || current.alt}
-            {current.subtitle && <span className="flex-carousel__subtitle">{current.subtitle}</span>}
-          </span>
-          <span className="flex-carousel__count" data-hidden={focusOpen ? '' : undefined}>
+          <div key={active} className="flex-carousel__title">
+            <p>{current.title || current.alt}</p>
+            {current.subtitle && <p className="flex-carousel__subtitle">{current.subtitle}</p>}
+          </div>
+          <div className="flex-carousel__count" data-hidden={focusOpen ? '' : undefined}>
             <Digits value={active + 1} />
-            <span className="flex-carousel__slash">/</span>
-            <span>{String(list.length).padStart(2, '0')}</span>
-          </span>
+            <p className="flex-carousel__slash">/</p>
+            <p>{String(list.length).padStart(2, '0')}</p>
+          </div>
         </div>
       )}
       <div className="flex-carousel__live" aria-live="polite" aria-atomic="true">

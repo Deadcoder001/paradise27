@@ -210,7 +210,7 @@ Please confirm table availability for this reservation. Thank you!`;
       {/* LEFT & RIGHT FOOD-RELATED FLOATING SVGS (IDENTICAL TO GALLERY) */}
       {/* ========================================================= */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden z-0 select-none">
-        
+
         {/* --- LEFT SIDE FOOD SVGS --- */}
 
         {/* 1. Roasted Poultry / Meat Cut (Left Top) */}
@@ -317,7 +317,7 @@ Please confirm table availability for this reservation. Thank you!`;
       </div>
 
       <div className="relative max-w-6xl mx-auto px-4 xs:px-6 sm:px-8 z-10">
-        
+
         {/* Clean, Bold Minimal Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
           <h1 className="font-serif text-4xl xs:text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white mb-4 leading-[1.1]">
@@ -333,10 +333,10 @@ Please confirm table availability for this reservation. Thank you!`;
 
         {/* Main Grid: Location & Hours | Direct Manual Table Reservation Form */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 items-stretch mb-14 sm:mb-20">
-          
+
           {/* Left Column: Highway Location & Hours of Service */}
           <div className="flex flex-col gap-6 sm:gap-8 h-full">
-            
+
             {/* Highway Location Card */}
             <div className="flex-1 flex flex-col justify-between p-6 sm:p-8 rounded-2xl sm:rounded-3xl bg-black/20 border border-white/20">
               <div className="space-y-4">
@@ -438,23 +438,23 @@ Please confirm table availability for this reservation. Thank you!`;
           <div className="h-full p-6 sm:p-8 rounded-2xl sm:rounded-3xl bg-black/20 border border-white/20 flex flex-col justify-between">
             <div>
               <div className="mb-6">
-                  <h3 className="font-serif text-2xl sm:text-3xl font-bold text-white mb-1">
-                    Reserve a Table
-                  </h3>
-                  <p className="text-xs sm:text-sm text-white/85 font-medium">
-                    Enter your reservation details manually below. We confirm all bookings instantly via WhatsApp.
-                  </p>
-                </div>
+                <h3 className="font-serif text-2xl sm:text-3xl font-bold text-white mb-1">
+                  Reserve a Table
+                </h3>
+                <p className="text-xs sm:text-sm text-white/85 font-medium">
+                  Enter your reservation details manually below. We confirm all bookings instantly via WhatsApp.
+                </p>
+              </div>
 
-                {formError && (
-                  <div className="mb-5 p-3.5 rounded-xl bg-black/50 border border-amber-400/80 text-amber-200 text-xs sm:text-sm font-bold flex items-center gap-2.5">
-                    <AlertCircle className="w-4 h-4 text-amber-400 shrink-0" />
-                    <p>{formError}</p>
-                  </div>
-                )}
+              {formError && (
+                <div className="mb-5 p-3.5 rounded-xl bg-black/50 border border-amber-400/80 text-amber-200 text-xs sm:text-sm font-bold flex items-center gap-2.5">
+                  <AlertCircle className="w-4 h-4 text-amber-400 shrink-0" />
+                  <p>{formError}</p>
+                </div>
+              )}
 
               <form onSubmit={handleWhatsAppInquiry} className="space-y-4.5">
-                
+
                 {/* 1. Guest Full Name */}
                 <div className="w-full">
                   <label htmlFor="contact-name" className="flex items-center h-5 text-[11px] xs:text-xs uppercase tracking-wider text-white font-bold mb-1.5">
@@ -476,7 +476,7 @@ Please confirm table availability for this reservation. Thank you!`;
 
                 {/* 2. Manual Date & Arrival Time (Strict Validation & Format Check) */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 items-start">
-                  
+
                   {/* Reservation Date */}
                   <div className="w-full min-w-0">
                     <label htmlFor="contact-date" className="flex items-center gap-1.5 h-5 text-[11px] xs:text-xs uppercase tracking-wider text-white font-bold mb-1.5 whitespace-nowrap">
@@ -543,7 +543,7 @@ Please confirm table availability for this reservation. Thank you!`;
 
                 {/* 3. Manual Number of Guests & Contact Phone */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 items-start">
-                  
+
                   {/* Number of Guests */}
                   <div className="w-full min-w-0">
                     <label htmlFor="contact-guests" className="flex items-center gap-1.5 h-5 text-[11px] xs:text-xs uppercase tracking-wider text-white font-bold mb-1.5 whitespace-nowrap">
@@ -659,7 +659,7 @@ Please confirm table availability for this reservation. Thank you!`;
               allowFullScreen
               referrerPolicy="no-referrer-when-downgrade"
             />
-            
+
             {/* Quick Floating Highway Info Strip */}
             <div className="p-4 sm:p-5 bg-black/75 backdrop-blur-md border-t border-white/15 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs sm:text-sm font-bold text-white">
               <div className="flex items-center gap-2">

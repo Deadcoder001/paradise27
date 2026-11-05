@@ -94,17 +94,17 @@ const ScrollReveal = ({
       word.trim() === '' ? (
         word
       ) : (
-        <span className="scroll-reveal-word" key={index}>
+        <div className="inline-block scroll-reveal-word" key={index}>
           {splitBy === 'chars' ? (
             Array.from(word).map((char, charIndex) => (
-              <span className="scroll-reveal-piece" key={charIndex}>
+              <div className="inline-block scroll-reveal-piece" key={charIndex}>
                 {char}
-              </span>
+              </div>
             ))
           ) : (
-            <span className="scroll-reveal-piece">{word}</span>
+            <div className="inline-block scroll-reveal-piece">{word}</div>
           )}
-        </span>
+        </div>
       )
     );
   }, [text, splitBy]);
@@ -243,17 +243,22 @@ const ScrollReveal = ({
         });
       }
 
+      let rafId = 0;
       const resizeObserver =
         splitBy === 'lines' && typeof ResizeObserver !== 'undefined'
           ? new ResizeObserver(() => {
-              measure();
-              last.fill(-1);
-              render();
+              if (rafId) cancelAnimationFrame(rafId);
+              rafId = requestAnimationFrame(() => {
+                measure();
+                last.fill(-1);
+                render();
+              });
             })
           : null;
       resizeObserver?.observe(textEl);
 
       return () => {
+        if (rafId) cancelAnimationFrame(rafId);
         resizeObserver?.disconnect();
         pieces.forEach(piece => {
           piece.style.opacity = '';
@@ -292,13 +297,13 @@ const ScrollReveal = ({
 
   return (
     <Tag ref={containerRef} className={`scroll-reveal ${containerClassName}`} aria-label={text ?? undefined}>
-      <span
+      <div
         ref={textRef}
-        className={`scroll-reveal-text ${textClassName}`}
+        className={`inline-block scroll-reveal-text ${textClassName}`}
         aria-hidden={text === null ? undefined : true}
       >
         {splitText ?? children}
-      </span>
+      </div>
     </Tag>
   );
 };

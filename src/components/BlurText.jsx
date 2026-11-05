@@ -343,16 +343,16 @@ const BlurText = ({
       : pieceStyle;
 
     return (
-      <motion.span
+      <motion.div
         aria-hidden="true"
         key={piece.key}
-        style={style}
+        style={{ ...style, display: 'inline-block' }}
         initial={firstPhase === 'rest' ? false : fromSnapshot}
         animate={target}
         transition={transition}
       >
         {piece.content}
-      </motion.span>
+      </motion.div>
     );
   };
 
@@ -376,16 +376,16 @@ const BlurText = ({
         onPointerEnter={trigger === 'hover' ? handleEnter : undefined}
         onClick={trigger === 'click' ? replay : undefined}
       >
-        <span style={SR_ONLY}>{text}</span>
+        <p style={SR_ONLY}>{text}</p>
         {groups.map((indices, w) => (
-          <span
+          <div
             key={`word-${w}`}
-            style={wordStyle(w)}
+            style={{ ...wordStyle(w), display: 'inline-block' }}
             onPointerEnter={focusOnHover ? () => setFocusWord(w) : undefined}
             onPointerLeave={focusOnHover ? () => setFocusWord(-1) : undefined}
           >
             {indices.map(renderPiece)}
-          </span>
+          </div>
         ))}
       </div>
     </MotionConfig>

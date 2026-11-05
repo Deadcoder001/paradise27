@@ -1,9 +1,50 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
-import { Flame, Star, Sparkles, Clock, Wine, ChefHat, ArrowUpRight } from 'lucide-react';
-import { signatureDishes } from '../data/restaurantData';
+import { Flame, Star, Sparkles, Clock, Wine, ChefHat } from 'lucide-react';
 
-export default function DishShowcase({ onSelectDish }) {
+const signatureDishes = [
+  {
+    id: 'wagyu',
+    name: 'Truffle Wagyu Medallion',
+    subtitle: 'Signature Charcoal & Wood-Fired Cut',
+    category: 'Chef’s Selection',
+    description: 'Prime A5 wagyu tenderloin seared over cherry wood coals, served with Perigord black truffle shavings, silky parsnip purée, and an aged vintage port glaze.',
+    image: '/images/signature_wagyu.jpg',
+    price: '$78',
+    prepTime: '22 mins',
+    rating: '4.98',
+    tags: ['Wood-Fired', 'A5 Wagyu', 'Black Truffle'],
+    pairing: 'Cabernet Sauvignon, Napa Valley 2018',
+  },
+  {
+    id: 'salmon',
+    name: 'Blood Orange Wild King Salmon',
+    subtitle: 'Crispy Skin & Charred Ember Greens',
+    category: 'Ocean Harvest',
+    description: 'Pan-roasted Pacific king salmon with golden crackling skin, Sicilian blood orange reduction, ember-charred jumbo asparagus, and delicate 24k gold leaf.',
+    image: '/images/signature_salmon.jpg',
+    price: '$54',
+    prepTime: '18 mins',
+    rating: '4.95',
+    tags: ['Wild Caught', 'Gluten Free', 'Citrus Glaze'],
+    pairing: 'Domaine Leflaive Puligny-Montrachet',
+  },
+  {
+    id: 'cocktail',
+    name: 'Smoked Ember Old Fashioned',
+    subtitle: 'Artisan Crystal & Flaming Citrus Twist',
+    category: 'Craft Mixology',
+    description: 'Aged small-batch bourbon infused with Madagascar vanilla bean, charred orange peel oils, flamed organic rosemary sprig, served over hand-carved crystal ice.',
+    image: '/images/signature_cocktail.jpg',
+    price: '$24',
+    prepTime: '5 mins',
+    rating: '4.99',
+    tags: ['House Specialty', 'Flamed Citrus', 'Aged Bourbon'],
+    pairing: 'Dark Chocolate Ganache Tart',
+  },
+];
+
+export default function DishShowcase({ onSelectDish: _onSelectDish }) {
   const [activeIdx, setActiveIdx] = useState(0);
   const dish = signatureDishes[activeIdx];
   const shouldReduceMotion = useReducedMotion();
@@ -45,21 +86,21 @@ export default function DishShowcase({ onSelectDish }) {
 
               {/* Top Floating Badge: Category & Live Ember Indicator */}
               <div className="absolute top-3 sm:top-4 left-3 sm:left-4 flex items-center gap-2">
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-medium tracking-wider uppercase bg-[#090909]/80 backdrop-blur-md border border-white/15 text-white">
-                  <span className="w-2 h-2 rounded-full bg-[#FB6218] animate-pulse" />
-                  {dish.category}
-                </span>
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-medium tracking-wider uppercase bg-[#090909]/80 backdrop-blur-md border border-white/15 text-white">
+                  <div className="w-2 h-2 rounded-full bg-[#FB6218] animate-pulse" />
+                  <p>{dish.category}</p>
+                </div>
 
-                <span className="hidden sm:inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-semibold tracking-wider text-[#FB6218] bg-[#090909]/80 backdrop-blur-md border border-[#BF2A2E]/40">
+                <div className="hidden sm:inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-semibold tracking-wider text-[#FB6218] bg-[#090909]/80 backdrop-blur-md border border-[#BF2A2E]/40">
                   <Flame className="w-3 h-3 text-[#FB6218]" />
-                  <span>Wood-Fired Hearth</span>
-                </span>
+                  <p>Wood-Fired Hearth</p>
+                </div>
               </div>
 
               {/* Price & Rating Badge Top Right */}
               <div className="absolute top-3 sm:top-4 right-3 sm:right-4 flex items-center gap-2">
                 <div className="px-3.5 py-1 rounded-full bg-[#FB6218] text-[#FFFFFF] text-xs sm:text-sm font-bold tracking-wider shadow-glow-orange flex items-center gap-1">
-                  <span>{dish.price}</span>
+                  <p>{dish.price}</p>
                 </div>
               </div>
 
@@ -68,12 +109,12 @@ export default function DishShowcase({ onSelectDish }) {
                 <div className="flex items-center gap-2 text-xs text-white/70 mb-1">
                   <div className="flex items-center text-[#FB6218]">
                     <Star className="w-3.5 h-3.5 fill-[#FB6218] text-[#FB6218]" />
-                    <span className="ml-1 text-white font-medium">{dish.rating}</span>
+                    <p className="ml-1 text-white font-medium">{dish.rating}</p>
                   </div>
-                  <span className="text-white/40">•</span>
+                  <p className="text-white/40">•</p>
                   <div className="flex items-center gap-1 text-white/80">
                     <Clock className="w-3 h-3 text-[#FB6218]" />
-                    <span>{dish.prepTime} prep</span>
+                    <p>{dish.prepTime} prep</p>
                   </div>
                 </div>
 
@@ -103,20 +144,20 @@ export default function DishShowcase({ onSelectDish }) {
               <div className="mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 text-xs">
                 <div className="flex items-center gap-1.5 text-white/70">
                   <Wine className="w-3.5 h-3.5 text-[#FB6218]" />
-                  <span className="text-white/50 text-[11px] uppercase tracking-wider">Pairing:</span>
-                  <span className="text-white font-medium text-[11px] sm:text-xs truncate max-w-[210px] sm:max-w-none">
+                  <p className="text-white/50 text-[11px] uppercase tracking-wider">Pairing:</p>
+                  <p className="text-white font-medium text-[11px] sm:text-xs truncate max-w-[210px] sm:max-w-none">
                     {dish.pairing}
-                  </span>
+                  </p>
                 </div>
 
                 <div className="flex items-center gap-1.5">
                   {dish.tags.map((tag) => (
-                    <span
+                    <div
                       key={tag}
                       className="text-[10px] uppercase tracking-wider px-2 py-0.5 rounded bg-white/5 border border-white/10 text-white/80"
                     >
                       {tag}
-                    </span>
+                    </div>
                   ))}
                 </div>
               </div>
@@ -127,13 +168,13 @@ export default function DishShowcase({ onSelectDish }) {
         {/* Interactive Dish Switcher Tabs */}
         <div className="mt-4 pt-3 border-t border-white/10">
           <div className="flex items-center justify-between mb-2 px-1">
-            <span className="text-[11px] font-semibold uppercase tracking-widest text-white/50 flex items-center gap-1.5">
+            <div className="text-[11px] font-semibold uppercase tracking-widest text-white/50 flex items-center gap-1.5">
               <ChefHat className="w-3.5 h-3.5 text-[#FB6218]" />
-              <span>Signature Creations</span>
-            </span>
-            <span className="text-[11px] text-white/40 font-mono">
+              <p>Signature Creations</p>
+            </div>
+            <p className="text-[11px] text-white/40 font-mono">
               0{activeIdx + 1} / 0{signatureDishes.length}
-            </span>
+            </p>
           </div>
 
           <div className="grid grid-cols-3 gap-2 sm:gap-3">

@@ -753,7 +753,15 @@ const GradientASCII = ({
       wake();
     };
 
-    const resizeObserver = new ResizeObserver(resize);
+    let resizeRaf = 0;
+    const safeResize = () => {
+      if (resizeRaf) cancelAnimationFrame(resizeRaf);
+      resizeRaf = requestAnimationFrame(() => {
+        resize();
+      });
+    };
+
+    const resizeObserver = new ResizeObserver(safeResize);
     resizeObserver.observe(container);
     const intersection = new IntersectionObserver(entries => {
       visible = entries.some(entry => entry.isIntersecting);
@@ -772,6 +780,7 @@ const GradientASCII = ({
 
     return () => {
       disposed = true;
+      if (resizeRaf) cancelAnimationFrame(resizeRaf);
       cancelAnimationFrame(raf);
       wakeRef.current = null;
       resizeObserver.disconnect();
