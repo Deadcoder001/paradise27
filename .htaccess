@@ -1,0 +1,65 @@
+# ------------------------------------------------------------------------------
+# Paradise 27 - Hostinger Apache / LiteSpeed Configuration
+# ------------------------------------------------------------------------------
+
+# 1. Directory Index prioritizing compiled production build
+DirectoryIndex dist/index.html index.html
+
+# 2. Strict MIME Type Definitions for Modern Web / ES Modules
+<IfModule mod_mime.c>
+  AddType application/javascript .js .mjs
+  AddType text/css .css
+  AddType image/svg+xml .svg .svgz
+  AddType application/json .json
+  AddType font/woff2 .woff2
+  AddType font/woff .woff
+</IfModule>
+
+# 3. URL Rewriting & SPA Routing
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Block access to source code and sensitive project files
+  RewriteRule ^(\.git|node_modules|src|public|package\.json|package-lock\.json|vite\.config\.js|tsconfig.*|\.env.*) - [F,L]
+
+  # If root is requested, serve dist/index.html directly
+  RewriteRule ^$ dist/index.html [L]
+
+  # Route direct requests for static assets to dist/
+  RewriteCond %{REQUEST_URI} !^/dist/
+  RewriteRule ^(assets|images|Menu|favicon\..*|icons\.svg|robots\.txt|sitemap\.xml)(.*)$ dist/$1$2 [L]
+
+  # Route any request whose target exists in dist/
+  RewriteCond %{REQUEST_URI} !^/dist/
+  RewriteCond %{DOCUMENT_ROOT}/dist%{REQUEST_URI} -f [OR]
+  RewriteCond %{DOCUMENT_ROOT}/dist%{REQUEST_URI} -d
+  RewriteRule ^(.*)$ dist/$1 [L]
+
+  # SPA Routing fallback: Route all non-file / non-directory paths to dist/index.html
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} !^/dist/
+  RewriteRule . dist/index.html [L]
+</IfModule>
+
+# 4. Performance & Browser Caching
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpg "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType application/pdf "access plus 1 month"
+</IfModule>
+
+# 5. Security Headers
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>

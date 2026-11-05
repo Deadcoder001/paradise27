@@ -393,9 +393,42 @@ Please confirm table availability for this reservation. Thank you!`;
                   </div>
                 </div>
               </div>
-              <div className="pt-4 border-t border-white/10 flex items-center justify-between text-xs text-white/70">
-                <p>Open All 7 Days · Highway Walk-ins Welcome</p>
-                <p className="text-amber-200/90 font-bold">Reservations Prioritized</p>
+              <div className="pt-4 border-t border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">
+                <div>
+                  <p className="text-white/70">Open All 7 Days · Highway Walk-ins Welcome</p>
+                  <p className="text-amber-200/90 font-bold">Reservations Prioritized</p>
+                </div>
+                
+                {/* Social Channels */}
+                <div className="flex items-center gap-2">
+                  <a
+                    href="https://www.instagram.com/paradise___27/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-bold transition-colors"
+                    aria-label="Instagram"
+                  >
+                    <svg className="w-3.5 h-3.5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                    </svg>
+                    <p>Instagram</p>
+                  </a>
+
+                  <a
+                    href="https://www.facebook.com/p/Paradise-27-61581372972762/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-bold transition-colors"
+                    aria-label="Facebook"
+                  >
+                    <svg className="w-3.5 h-3.5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                    </svg>
+                    <p>Facebook</p>
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -633,8 +666,33 @@ Please confirm table availability for this reservation. Thank you!`;
                 <MapPin className="w-4 h-4 text-white shrink-0" />
                 <p>Paradise 27 • NH 27 Nagaon Bypass, Assam 782002</p>
               </div>
-              <div className="flex items-center gap-4 text-white/80">
-                <p>Spacious Parking Available</p>
+              <div className="flex flex-wrap items-center gap-3 text-white/80">
+                <a
+                  href="https://www.instagram.com/paradise___27/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1 hover:text-white transition-colors"
+                >
+                  <svg className="w-3.5 h-3.5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                  </svg>
+                  <p>Instagram</p>
+                </a>
+                <p>•</p>
+                <a
+                  href="https://www.facebook.com/p/Paradise-27-61581372972762/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1 hover:text-white transition-colors"
+                >
+                  <svg className="w-3.5 h-3.5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                  </svg>
+                  <p>Facebook</p>
+                </a>
+                <p>•</p>
                 <a
                   href="tel:+919910210318"
                   className="text-white underline underline-offset-4 hover:text-amber-200"

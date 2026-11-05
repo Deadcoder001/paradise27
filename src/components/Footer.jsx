@@ -125,6 +125,37 @@ export default function Footer({ onOpenMenu }) {
                 <Mail className="w-3.5 h-3.5 text-neutral-400" />
                 <p className="break-all xs:break-normal">paradise27gnpk2@gmail.com</p>
               </a>
+
+              {/* Social Channels */}
+              <div className="pt-2 flex flex-wrap items-center gap-2">
+                <a
+                  href="https://www.instagram.com/paradise___27/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 text-white text-xs transition-colors"
+                  aria-label="Paradise 27 on Instagram"
+                >
+                  <svg className="w-3.5 h-3.5 text-[#FB6218]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                  </svg>
+                  <p>Instagram</p>
+                </a>
+
+                <a
+                  href="https://www.facebook.com/p/Paradise-27-61581372972762/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 text-white text-xs transition-colors"
+                  aria-label="Paradise 27 on Facebook"
+                >
+                  <svg className="w-3.5 h-3.5 text-[#FB6218]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                  </svg>
+                  <p>Facebook</p>
+                </a>
+              </div>
             </div>
           </div>
 
