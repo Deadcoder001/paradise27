@@ -89,7 +89,7 @@ ${specialNotes.trim() ? `• *Special Notes / Requests:* ${specialNotes.trim()}`
 
 Please confirm table availability for this reservation. Thank you!`;
 
-    const url = `https://wa.me/919910210318?text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/918822029150?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank', 'noopener,noreferrer');
   };
 
@@ -177,11 +177,11 @@ Please confirm table availability for this reservation. Thank you!`;
               <div className="p-3.5 sm:p-4 rounded-2xl bg-white/[0.04] border border-white/10 flex flex-col xs:flex-row xs:items-center justify-between gap-3">
                 <div>
                   <p className="text-[10px] uppercase tracking-wider text-white/70 font-bold">Direct Telephone Desk</p>
-                  <p className="font-serif text-sm xs:text-base sm:text-lg font-bold text-white mt-0.5">+91 99102 10318</p>
+                  <p className="font-serif text-sm xs:text-base sm:text-lg font-bold text-white mt-0.5">+91 88220 29150</p>
                 </div>
                 <div className="grid grid-cols-2 xs:flex items-center gap-2 w-full xs:w-auto">
                   <a
-                    href="tel:+919910210318"
+                    href="tel:+918822029150"
                     className="inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-xl bg-white text-black font-bold text-xs uppercase tracking-wider hover:bg-neutral-100 transition-colors"
                   >
                     <Phone className="w-3.5 h-3.5" />

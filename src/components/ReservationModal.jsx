@@ -95,7 +95,7 @@ ${specialNotes.trim() ? `• *Special Notes / Requests:* ${specialNotes.trim()}`
 
 Please confirm table availability for this reservation. Thank you!`;
 
-    const url = `https://wa.me/919910210318?text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/918822029150?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank', 'noopener,noreferrer');
   };
 

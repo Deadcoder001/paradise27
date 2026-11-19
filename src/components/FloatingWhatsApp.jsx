@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 export default function FloatingWhatsApp() {
   const [isHovered, setIsHovered] = useState(false);
 
-  const phone = '919910210318';
+  const phone = '918822029150';
   const defaultMessage = 'Hello Paradise 27 Concierge, I would like to inquire about a table reservation.';
   const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(defaultMessage)}`;
 

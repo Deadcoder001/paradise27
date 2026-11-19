@@ -105,10 +105,10 @@ export default function Navbar({ onOpenReserve: _onOpenReserve, onOpenMenu, isMe
               </button>
 
               <a
-                href="tel:+919910210318"
+                href="tel:+918822029150"
                 aria-label="Call Restaurant Concierge"
                 className="p-2 sm:p-2.5 rounded-full bg-white/[0.04] hover:bg-white/[0.1] border border-white/10 text-white/70 hover:text-white transition-all hover:scale-105 active:scale-95"
-                title="Concierge Hotline: +91 99102 10318"
+                title="Concierge Hotline: +91 88220 29150"
               >
                 <Phone className="w-3.5 h-3.5 text-[#FB6218]" />
               </a>
@@ -208,9 +208,9 @@ export default function Navbar({ onOpenReserve: _onOpenReserve, onOpenMenu, isMe
 
                     {/* Hotline Direct Link */}
                     <div className="pt-1 flex items-center justify-between text-[11px] text-white/50 px-1">
-                      <a href="tel:+919910210318" className="flex items-center gap-1.5 hover:text-[#FB6218] transition-colors">
+                      <a href="tel:+918822029150" className="flex items-center gap-1.5 hover:text-[#FB6218] transition-colors">
                         <Phone className="w-3 h-3 text-[#FB6218]" />
-                        <div>+91 99102 10318</div>
+                        <div>+91 88220 29150</div>
                       </a>
                       <div className="flex items-center gap-1.5">
                         <Clock className="w-3 h-3 text-[#FB6218]" />

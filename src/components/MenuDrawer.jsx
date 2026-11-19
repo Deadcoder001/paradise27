@@ -128,7 +128,7 @@ ${specialNotes.trim() ? `• *Special Notes / Requests:* ${specialNotes.trim()}`
 
 Please confirm table availability for this reservation. Thank you!`;
 
-    const url = `https://wa.me/919910210318?text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/918822029150?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank', 'noopener,noreferrer');
   };
 
@@ -292,11 +292,11 @@ Please confirm table availability for this reservation. Thank you!`;
                           Highway stop on NH 27 with dedicated attendant parking for travellers.
                         </p>
                         <a
-                          href="tel:+919910210318"
+                          href="tel:+918822029150"
                           className="mt-1 flex items-center gap-2 text-xs font-bold text-white hover:text-[#FB6218] transition-colors"
                         >
                           <Phone className="w-3.5 h-3.5 text-[#FB6218]" />
-                          <p>Direct Desk: +91 99102 10318</p>
+                          <p>Direct Desk: +91 88220 29150</p>
                         </a>
                       </div>
                     </div>

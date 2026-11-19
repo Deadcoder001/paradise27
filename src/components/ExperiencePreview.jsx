@@ -192,7 +192,7 @@ export default function ExperiencePreview({ onOpenReserve: _onOpenReserve, onOpe
             mode="scrub"
             splitBy="words"
             effect="fade"
-            stagger={0.04}
+            stagger={0.03}
             duration={0.8}
             smoothing={0}
             baseOpacity={0.1}
@@ -201,9 +201,17 @@ export default function ExperiencePreview({ onOpenReserve: _onOpenReserve, onOpe
             enableBlur={true}
             blurStrength={4}
             containerClassName="my-0 w-full"
-            textClassName="font-serif !text-base xs:!text-xl sm:!text-3xl md:!text-4xl lg:!text-[2.6rem] font-medium tracking-tight text-white leading-relaxed xs:leading-relaxed sm:leading-relaxed text-justify [text-align-last:center] select-none break-words"
+            textClassName="font-serif !text-base xs:!text-xl sm:!text-2xl md:!text-3xl lg:!text-[2.2rem] font-medium tracking-tight text-white leading-relaxed xs:leading-relaxed sm:leading-relaxed text-justify [text-align-last:center] select-none break-words whitespace-pre-line"
           >
-            Paradise 27 was born from a deep reverence for the elemental fire. Every morning, our seasoned cherrywood embers are rekindled, transforming ancient culinary techniques into an unforgettable dining experience. We do not simply serve food; we craft timeless moments where flavour, warmth, and memory intertwine. From prime Miyazaki A5 wagyu seared over glowing charcoal to line-caught wild king salmon kissed by citrus smoke, each plate honours the provenance of our ingredients. Guided by ancestral hearth traditions and modern gastronomic artistry, our kitchen is a sanctuary for the curious palate. Gather around our table, breathe in the comforting perfume of burning wood, and discover a dining experience where every nuance is curated to linger long after the final course.
+            {`At Paradise 27, we believe that great food is more than just a meal — it is an experience shaped by flavour, tradition and heartfelt hospitality.
+
+Our philosophy is rooted in celebrating the rich culinary heritage of Assam while embracing the diversity of cuisines from across India and beyond. We strive to bring authentic flavours to every plate, prepared with quality ingredients, passion and attention to detail.
+
+We believe in creating a welcoming space where families, friends and travellers can come together, enjoy exceptional food and feel at home.
+
+Through our commitment to quality, cleanliness, consistency and genuine hospitality, we aim to make every visit memorable.
+
+Paradise 27 — Where authentic flavours meet heartfelt hospitality.`}
           </ScrollReveal>
         </div>
 

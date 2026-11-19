@@ -1,8 +1,8 @@
 export const socialLinks = {
   instagram: 'https://www.instagram.com/paradise___27/',
   facebook: 'https://www.facebook.com/p/Paradise-27-61581372972762/',
-  whatsapp: 'https://wa.me/919910210318',
-  phone: '+919910210318',
+  whatsapp: 'https://wa.me/918822029150',
+  phone: '+918822029150',
   email: 'paradise27gnpk2@gmail.com',
 };
 

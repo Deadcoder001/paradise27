@@ -187,7 +187,7 @@ ${specialNotes.trim() ? `• *Special Notes / Requests:* ${specialNotes.trim()}`
 
 Please confirm table availability for this reservation. Thank you!`;
 
-    const url = `https://wa.me/919910210318?text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/918822029150?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank', 'noopener,noreferrer');
   };
 
@@ -694,10 +694,10 @@ Please confirm table availability for this reservation. Thank you!`;
                 </a>
                 <p>•</p>
                 <a
-                  href="tel:+919910210318"
+                  href="tel:+918822029150"
                   className="text-white underline underline-offset-4 hover:text-amber-200"
                 >
-                  Call +91 99102 10318
+                  Call +91 88220 29150
                 </a>
               </div>
             </div>

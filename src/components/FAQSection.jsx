@@ -6,13 +6,13 @@ const FAQ_ITEMS = [
     id: 'concept',
     question: 'What style of dining and cuisine does Paradise 27 offer?',
     answer:
-      'Paradise 27 is an elevated culinary sanctuary celebrating ancestral wood-fired cooking and modern gastronomy. Every evening, seasoned cherrywood coals are rekindled to sear prime cuts, heirloom regional recipes, fresh river and ocean harvests, and delicate botanical reductions.',
+      'Paradise 27 offers a refined yet welcoming family dining experience, celebrating authentic Assamese cuisine alongside a thoughtfully curated selection of multi-cuisine delicacies.',
   },
   {
     id: 'reservations',
     question: 'How do table reservations and seating times work?',
     answer:
-      'We recommend reserving your table in advance via our direct WhatsApp Concierge (+91 99102 10318) or telephone desk. We seat guests in comfortable dining increments between 7:30 AM and 10:00 PM. Tables are held for 15 minutes past reservation time to preserve the dining cadence.',
+      'We recommend reserving your table in advance via our direct WhatsApp Concierge (+91 88220 29150) or telephone desk. We seat guests in comfortable dining increments between 7:30 AM and 10:00 PM. Tables are held for 15 minutes past reservation time to preserve the dining cadence.',
   },
   {
     id: 'dietary',
@@ -27,16 +27,10 @@ const FAQ_ITEMS = [
       'We welcome guests Monday through Sunday from 7:30 AM until 10:00 PM (open every day, all 7 days for breakfast, lunch, high tea, and dinner). We are conveniently situated on National Highway 27, Nagaon Bypass Road with secure, ample on-site guest parking and attendant assistance.',
   },
   {
-    id: 'dress-code',
-    question: 'Is there an evening dress code?',
-    answer:
-      'We embrace an ambiance of relaxed, contemporary elegance. Smart casual or evening attire is welcomed. To maintain an intimate sanctuary for all guests, athletic sportswear and beachwear are politely discouraged in our main dining salon.',
-  },
-  {
     id: 'private-dining',
     question: 'Can I arrange private dining salons, birthdays, or executive banquets?',
     answer:
-      'Yes. Our private dining salon accommodates intimate parties of up to 16 guests with dedicated sommelier service, custom tasting flights, and personalized chef menus. Connect with our concierge via WhatsApp to discuss tailored arrangements.',
+      'Yes. Our dining space accommodates intimate parties of up to 100 guests with dedicated sommelier service, custom tasting flights, and personalized chef menus. Connect with our concierge via WhatsApp to discuss tailored arrangements.',
   },
 ];
 
@@ -122,7 +116,7 @@ export default function FAQSection() {
           </div>
 
           <a
-            href="https://wa.me/919910210318?text=Hello%20Paradise%2027%20Concierge%2C%20I%20have%20a%20question%20regarding%20dining."
+            href="https://wa.me/918822029150?text=Hello%20Paradise%2027%20Concierge%2C%20I%20have%20a%20question%20regarding%20dining."
             target="_blank"
             rel="noopener noreferrer"
             className="flex-shrink-0 inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white hover:bg-neutral-100 text-black text-xs sm:text-sm font-semibold uppercase tracking-wider transition-all duration-300 shadow-[0_4px_20px_rgba(255,255,255,0.1)] active:scale-95"

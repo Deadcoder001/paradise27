@@ -101,15 +101,15 @@ export default function Footer({ onOpenMenu }) {
             </p>
             <div className="text-xs sm:text-sm space-y-2">
               <a
-                href="tel:+919910210318"
+                href="tel:+918822029150"
                 className="flex items-center gap-2 text-neutral-300 hover:text-white transition-colors"
               >
                 <Phone className="w-3.5 h-3.5 text-neutral-400" />
-                <p>+91 99102 10318</p>
+                <p>+91 88220 29150</p>
               </a>
 
               <a
-                href="https://wa.me/919910210318?text=Hello%20Paradise%2027%20Concierge%2C%20I%20would%20like%20to%20inquire%20about%20dining."
+                href="https://wa.me/918822029150?text=Hello%20Paradise%2027%20Concierge%2C%20I%20would%20like%20to%20inquire%20about%20dining."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-neutral-300 hover:text-white transition-colors"

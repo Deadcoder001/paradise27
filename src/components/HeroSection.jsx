@@ -236,7 +236,7 @@ export default function HeroSection({ onOpenReserve: _onOpenReserve, onOpenMenu 
 
           <motion.div variants={itemVariants}>
             <p className="text-xs xs:text-sm sm:text-base md:text-xl text-white/95 max-w-2xl mx-auto font-light leading-relaxed px-1 sm:px-0">
-              Where ancestral wood-fired cooking meets modern gastronomy. Discover exceptional flavours, prime cuts kissed by cherrywood embers, and unforgettable moments around the table.
+              Rooted in the rich culinary traditions of Assam, Paradise 27 brings together authentic regional delicacies and an exquisite selection of multi-cuisine offerings, complemented by warm hospitality and an inviting ambience.
             </p>
           </motion.div>
 
@@ -285,7 +285,7 @@ export default function HeroSection({ onOpenReserve: _onOpenReserve, onOpenMenu 
       </div>
 
       {/* Mobile View (< 640px): Interactive Vertical Compare Bar Platter (Zero Scroll Lag) */}
-      <div className="sm:hidden relative w-full flex flex-col items-center justify-center mt-3 xs:mt-5 sm:mt-0 z-40 select-none pb-3 pt-0">
+      <div className="sm:hidden relative w-full flex flex-col items-center justify-center mt-2 xs:mt-3 sm:mt-0 z-40 select-none pb-2 pt-0">
         <div className="relative flex justify-center items-end overflow-visible w-full max-w-[320px] xs:max-w-[360px] mx-auto px-4">
           
           {/* Left Side Dish: Spicy Fish Curry (Appears as it is) */}
