@@ -1,58 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:geo="http://www.google.com/geo/schemas/sitemap/1.0">
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   
   <!-- Home Page -->
   <url>
-    <loc>https://paradise27.com/</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://paradise27.in/</loc>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://paradise27.com/images/food/WhatsApp%20Image%202026-10-26%20at%2017.44.11.jpeg</image:loc>
-      <image:title>Paradise 27 Grand Dining Table & Swargadeo Thali</image:title>
-      <image:caption>Authentic Assamese and multi-cuisine delicacies on National Highway 27, Nagaon, Assam</image:caption>
+      <image:loc>https://paradise27.in/images/Logo.png</image:loc>
+      <image:title>Paradise 27 Authentic Delicacies Logo</image:title>
+      <image:caption>Authentic Assamese and multi-cuisine restaurant on National Highway 27, Nagaon Bypass, Assam</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://paradise27.in/images/brushed_brass_tray_food.png</image:loc>
+      <image:title>Paradise 27 Signature Swargadeo Culinary Feast Platter</image:title>
+      <image:caption>Authentic Assamese delicacies served in traditional brassware</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://paradise27.in/images/Spicy_Fish_Curry.png</image:loc>
+      <image:title>Paradise 27 Spicy Fish Curry</image:title>
+      <image:caption>Traditional slow-cooked regional freshwater fish curry</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://paradise27.in/images/Terracotta_Bowl_of_Saut%C3%A9ed_Okra.png</image:loc>
+      <image:title>Paradise 27 Sautéed Okra in Terracotta Bowl</image:title>
+      <image:caption>Locally sourced fresh organic vegetables cooked with indigenous spices</image:caption>
     </image:image>
   </url>
 
-  <!-- About Page -->
+  <!-- About Us Page -->
   <url>
-    <loc>https://paradise27.com/about</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://paradise27.in/about</loc>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.9</priority>
     <image:image>
-      <image:loc>https://paradise27.com/images/ambience/room.jpeg</image:loc>
-      <image:title>Paradise 27 Dining Room & Ambience</image:title>
-      <image:caption>A welcoming haven on NH 27 Nagaon Bypass for families and road travellers</image:caption>
+      <image:loc>https://paradise27.in/images/ambience/room.jpeg</image:loc>
+      <image:title>Paradise 27 Dining Room and Ambience</image:title>
+      <image:caption>A welcoming haven on NH 27 Nagaon Bypass for families and highway road travellers</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://paradise27.com/images/ambience/chef.jpeg</image:loc>
-      <image:title>Paradise 27 Executive Chef</image:title>
-      <image:caption>Dedicated craft and authentic Assamese hearth heritage cooking</image:caption>
+      <image:loc>https://paradise27.in/images/ambience/chef.jpeg</image:loc>
+      <image:title>Paradise 27 Master Chef</image:title>
+      <image:caption>Dedicated craft and authentic Assamese heritage cooking</image:caption>
     </image:image>
   </url>
 
-  <!-- Gallery Page -->
+  <!-- Culinary & Ambience Gallery Page -->
   <url>
-    <loc>https://paradise27.com/gallery</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://paradise27.in/gallery</loc>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://paradise27.com/images/ambience/img1.jpeg</image:loc>
-      <image:title>Paradise 27 Interior & Seating</image:title>
+      <image:loc>https://paradise27.in/images/ambience/img1.jpeg</image:loc>
+      <image:title>Paradise 27 Welcoming Interior Seating</image:title>
+      <image:caption>Spacious, clean, and elegant dining environment for highway commuters</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://paradise27.in/images/ambience/img2.jpeg</image:loc>
+      <image:title>Paradise 27 Ambience and Hospitality</image:title>
+      <image:caption>Warm hospitality and comfortable family dining booths</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://paradise27.in/images/food/WhatsApp%20Image%202026-10-26%20at%2017.44.11.jpeg</image:loc>
+      <image:title>Paradise 27 Authentic Assamese Dishes</image:title>
+      <image:caption>Swargadeo Thali featuring seasonal regional produce</image:caption>
     </image:image>
   </url>
 
-  <!-- Contact & Location Page -->
+  <!-- Contact & Highway Location Page -->
   <url>
-    <loc>https://paradise27.com/contact</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://paradise27.in/contact</loc>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://paradise27.in/images/Logo.png</image:loc>
+      <image:title>Paradise 27 National Highway 27 Location</image:title>
+      <image:caption>Conveniently located at Nagaon Bypass, Assam with ample on-site guest parking</image:caption>
+    </image:image>
   </url>
 
 </urlset>
-
