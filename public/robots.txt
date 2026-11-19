@@ -1,4 +1,4 @@
-# Robots.txt for Paradise 27 (https://paradise27.com)
+# Robots.txt for Paradise 27 (https://paradise27.in)
 # Nagaon Bypass, National Highway 27, Assam, India
 
 User-agent: *
@@ -32,5 +32,4 @@ Allow: /
 User-agent: FacebookBot
 Allow: /
 
-Sitemap: https://paradise27.com/sitemap.xml
-
+Sitemap: https://paradise27.in/sitemap.xml
