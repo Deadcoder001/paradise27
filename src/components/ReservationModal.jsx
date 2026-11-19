@@ -239,7 +239,7 @@ Please confirm table availability for this reservation. Thank you!`;
                       </p>
                     ) : (
                       <p className="text-[10px] text-white/50 font-medium leading-tight">
-                        Service: 7:00 AM — 10:00 PM
+                        Service: 7:30 AM — 10:00 PM
                       </p>
                     )}
                   </div>

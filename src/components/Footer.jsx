@@ -67,7 +67,7 @@ export default function Footer({ onOpenMenu }) {
             </p>
             <div className="text-xs sm:text-sm text-neutral-300 space-y-1.5 font-normal leading-relaxed">
               <p className="text-white font-bold">Monday — Sunday</p>
-              <p className="text-white font-bold">7:00 AM — 10:00 PM</p>
+              <p className="text-white font-bold">7:30 AM — 10:00 PM</p>
               <p className="text-neutral-400 text-[11px] pt-1">Breakfast, Lunch, High Tea & Dinner</p>
               <p className="text-neutral-400 text-[11px]">Open All 7 Days · Highway Hearth</p>
             </div>

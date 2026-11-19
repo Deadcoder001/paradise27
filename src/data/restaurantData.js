@@ -6,6 +6,13 @@ export const socialLinks = {
   email: 'paradise27gnpk2@gmail.com',
 };
 
+export const restaurantHours = {
+  daily: '7:30 AM — 10:00 PM',
+  breakfast: '7:30 AM — 11:30 AM',
+  lunchDinner: '12:00 PM — 10:00 PM',
+  days: 'Monday — Sunday (Open All 7 Days)',
+};
+
 export const navLinks = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },

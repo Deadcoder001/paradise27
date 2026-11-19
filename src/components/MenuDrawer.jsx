@@ -79,7 +79,7 @@ export default function MenuDrawer({ isOpen, onClose, onOpenReserve }) {
       title: 'Breakfast & Morning Fare',
       shortTitle: 'Breakfast',
       subtitle: 'Artisanal Bakes, Specialty Roasts & Morning Specialties',
-      hours: 'Morning Service · 7:00 AM – 11:30 AM',
+      hours: 'Morning Service · 7:30 AM – 11:30 AM',
       icon: Coffee,
       pdfPath: '/Menu/breakfast-menu.pdf',
       downloadName: 'Paradise27-Breakfast-Menu.pdf',
@@ -270,11 +270,11 @@ Please confirm table availability for this reservation. Thank you!`;
                         <div className="text-xs space-y-2.5 font-medium text-white/80">
                           <div className="flex items-center justify-between pb-2 border-b border-white/10">
                             <p className="text-white font-bold">Monday — Sunday</p>
-                            <p className="text-white font-bold">7:00 AM — 10:00 PM</p>
+                            <p className="text-white font-bold">7:30 AM — 10:00 PM</p>
                           </div>
                           <div className="flex items-center justify-between pb-2 border-b border-white/10">
                             <p>Breakfast Fare</p>
-                            <p className="text-white font-semibold">7:00 AM — 11:30 AM</p>
+                            <p className="text-white font-semibold">7:30 AM — 11:30 AM</p>
                           </div>
                           <div className="flex items-center justify-between">
                             <p>Lunch & Dinner</p>
@@ -398,7 +398,7 @@ Please confirm table availability for this reservation. Thank you!`;
                                 </p>
                               ) : (
                                 <p className="text-[10px] text-white/50 font-medium leading-tight">
-                                  Service: 7:00 AM — 10:00 PM
+                                  Service: 7:30 AM — 10:00 PM
                                 </p>
                               )}
                             </div>
@@ -515,7 +515,7 @@ Please confirm table availability for this reservation. Thank you!`;
               <div className="text-xs text-white/60 font-light flex items-center gap-2">
                 <div className="w-1.5 h-1.5 rounded-full bg-[#FB6218]" />
                 <div>
-                  {activeMenuId === 'reserve' ? 'Open All 7 Days · 7:00 AM — 10:00 PM' : currentMenu.hours}
+                  {activeMenuId === 'reserve' ? 'Open All 7 Days · 7:30 AM — 10:00 PM' : currentMenu.hours}
                 </div>
               </div>
 

@@ -160,7 +160,7 @@ export default function Navbar({ onOpenReserve: _onOpenReserve, onOpenMenu, isMe
                     <div className="uppercase tracking-[0.2em] font-medium">Paradise 27 Experience</div>
                     <div className="flex items-center gap-1.5">
                       <div className="w-1.5 h-1.5 rounded-full bg-[#FB6218] animate-pulse" />
-                      <div>Monday to Sunday · 7:00 AM – 10:00 PM</div>
+                      <div>Monday to Sunday · 7:30 AM – 10:00 PM</div>
                     </div>
                   </div>
 

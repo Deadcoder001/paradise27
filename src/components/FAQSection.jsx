@@ -12,7 +12,7 @@ const FAQ_ITEMS = [
     id: 'reservations',
     question: 'How do table reservations and seating times work?',
     answer:
-      'We recommend reserving your table in advance via our direct WhatsApp Concierge (+91 99102 10318) or telephone desk. We seat guests in comfortable dining increments between 7:00 AM and 10:00 PM. Tables are held for 15 minutes past reservation time to preserve the dining cadence.',
+      'We recommend reserving your table in advance via our direct WhatsApp Concierge (+91 99102 10318) or telephone desk. We seat guests in comfortable dining increments between 7:30 AM and 10:00 PM. Tables are held for 15 minutes past reservation time to preserve the dining cadence.',
   },
   {
     id: 'dietary',
@@ -24,7 +24,7 @@ const FAQ_ITEMS = [
     id: 'hours-location',
     question: 'What are your hours of service and location?',
     answer:
-      'We welcome guests Monday through Sunday from 7:00 AM until 10:00 PM (open every day, all 7 days for breakfast, lunch, high tea, and dinner). We are conveniently situated on National Highway 27, Nagaon Bypass Road with secure, ample on-site guest parking and attendant assistance.',
+      'We welcome guests Monday through Sunday from 7:30 AM until 10:00 PM (open every day, all 7 days for breakfast, lunch, high tea, and dinner). We are conveniently situated on National Highway 27, Nagaon Bypass Road with secure, ample on-site guest parking and attendant assistance.',
   },
   {
     id: 'dress-code',

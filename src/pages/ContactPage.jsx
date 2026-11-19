@@ -381,11 +381,11 @@ Please confirm table availability for this reservation. Thank you!`;
                 <div className="text-sm space-y-3 font-medium">
                   <div className="flex items-center justify-between pb-2.5 border-b border-white/10">
                     <p className="text-white font-bold">Monday — Sunday</p>
-                    <p className="text-white font-bold">7:00 AM — 10:00 PM</p>
+                    <p className="text-white font-bold">7:30 AM — 10:00 PM</p>
                   </div>
                   <div className="flex items-center justify-between pb-2.5 border-b border-white/10">
                     <p className="text-white/80">Breakfast & Morning Fare</p>
-                    <p className="text-white font-bold">7:00 AM — 11:30 AM</p>
+                    <p className="text-white font-bold">7:30 AM — 11:30 AM</p>
                   </div>
                   <div className="flex items-center justify-between">
                     <p className="text-white/80">Lunch, High Tea & Dinner</p>
@@ -534,7 +534,7 @@ Please confirm table availability for this reservation. Thank you!`;
                         </p>
                       ) : (
                         <p className="text-[10px] text-white/50 font-medium leading-tight">
-                          Service: 7:00 AM — 10:00 PM
+                          Service: 7:30 AM — 10:00 PM
                         </p>
                       )}
                     </div>

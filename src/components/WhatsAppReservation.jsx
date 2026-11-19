@@ -120,7 +120,7 @@ Please confirm table availability for this reservation. Thank you!`;
             Table Reservation & Concierge
           </h2>
           <p className="text-xs xs:text-sm sm:text-base text-white/85 font-medium max-w-2xl mx-auto leading-relaxed">
-            Reserve your table for wood-fired culinary specialties and Assamese cuisine. Open daily Monday to Sunday from 7:00 AM to 10:00 PM.
+            Reserve your table for wood-fired culinary specialties and Assamese cuisine. Open daily Monday to Sunday from 7:30 AM to 10:00 PM.
           </p>
         </div>
 
@@ -137,7 +137,7 @@ Please confirm table availability for this reservation. Thank you!`;
                 </div>
                 <div>
                   <p className="text-[10px] xs:text-xs uppercase tracking-wider font-bold text-white/80">Hours of Service</p>
-                  <p className="text-xs xs:text-sm sm:text-base font-bold text-white">Open All 7 Days · 7:00 AM — 10:00 PM</p>
+                  <p className="text-xs xs:text-sm sm:text-base font-bold text-white">Open All 7 Days · 7:30 AM — 10:00 PM</p>
                 </div>
               </div>
 
@@ -155,11 +155,11 @@ Please confirm table availability for this reservation. Thank you!`;
               <div className="p-3.5 xs:p-4 sm:p-5 rounded-2xl bg-white/[0.04] border border-white/10 space-y-2.5 text-xs sm:text-sm backdrop-blur-sm">
                 <div className="flex flex-col xs:flex-row xs:items-center justify-between pb-2 border-b border-white/10 font-medium gap-1">
                   <p className="text-white/80">Monday — Sunday (Daily)</p>
-                  <p className="text-white font-bold">7:00 AM — 10:00 PM</p>
+                  <p className="text-white font-bold">7:30 AM — 10:00 PM</p>
                 </div>
                 <div className="flex flex-col xs:flex-row xs:items-center justify-between pb-2 border-b border-white/10 font-medium gap-1">
                   <p className="text-white/80">Breakfast & Morning Fare</p>
-                  <p className="text-white font-bold">7:00 AM — 11:30 AM</p>
+                  <p className="text-white font-bold">7:30 AM — 11:30 AM</p>
                 </div>
                 <div className="flex flex-col xs:flex-row xs:items-center justify-between pb-2 border-b border-white/10 font-medium gap-1">
                   <p className="text-white/80">Lunch, High Tea & Dinner</p>
@@ -305,7 +305,7 @@ Please confirm table availability for this reservation. Thank you!`;
                         </p>
                       ) : (
                         <p className="text-[10px] text-white/50 font-medium leading-tight">
-                          Service: 7:00 AM — 10:00 PM
+                          Service: 7:30 AM — 10:00 PM
                         </p>
                       )}
                     </div>
